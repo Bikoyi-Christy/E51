@@ -15,18 +15,12 @@ $query->bindParam(":mail", $mail, PDO::PARAM_STR);
 $query->execute();
 $result = $query->fetch(PDO::FETCH_OBJ);
 
-if ($result)
-{
     if ($mdp===$result->mdp){
+        session_start();
         $_SESSION["mail"] = $mail;
-    echo "Bienvenu ".$mail;
-/*     while ($row = $reponse->fetch()) {
-        $perso_id = $row[0];
-        $perso_nom = $row[2];
-    } */
-}
-}
-
-
+        echo "Bienvenu ".$mail;
+    }else {
+        echo "Votre compte n'existe pas";
+    };
 echo "<br><a href='index.html'>Retour</a>";
 ?>
