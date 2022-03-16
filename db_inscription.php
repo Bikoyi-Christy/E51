@@ -25,6 +25,6 @@ $msg = "Vos mots de passe ne correspondent pas !";
 }
 
 
-echo "<br><a href='index.html'>Retour</a>";
+echo "<br><a href='index.php'>Retour</a>";
 }
 ?>

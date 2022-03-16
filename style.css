@@ -1,0 +1,13 @@
+header{
+    display: flex;
+};
+
+ul, li{
+list-style-type:none;
+float:left;
+};
+
+.imglogo{
+    width: 5%;
+    height: 10px;
+}
