@@ -28,6 +28,6 @@
     <?php if($isLoggedIn){ ?><li><a href="catalogue.php">Catalogue</a></li><?php } ?>
     <li><a href="senrengistrer.php">S'inscrire</a></li>
     <li><a href="seconnecter.php">Se connecter</a></li>
-    <li><a href=""></a>Panier</li>
+    <?php if($isLoggedIn){ ?><li><a href="panier.php">Panier</a></li><?php } ?>
 </ul>
 <?php if($isLoggedIn){ ?><button><a href="deconnexion.php">Se Deconnecter</a></button><?php } ?>

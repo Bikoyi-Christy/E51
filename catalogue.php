@@ -10,26 +10,27 @@ include "header.php";
             <br />
             <p> Naruto,  rêve de devenir le plus grand de tout les ninjas. </p>
             <!-- Bouton pour acceder a la fonction PHP, et lire la base de donnée, ouverture sur une fenetre distincte grace à la fonction JAVASCRIPT -->
-            <form action="Etat.php" method="get">
+            <a href="etat.php?id=1">
             <INPUT type="submit" value="Voir l'état du Livre"> 
                 <!-- onClick="OuvrirFenetre1()"> -->
             </form>
              <!-- connexion avec le fichier PHP afin de d'executer une requette sql et d'envoyer les donées vers le serveur -->
-             <form action="mesfonctionsSQL.php" method="get">
+             <a href="emprunter.php?id=1">
                 <input class="emprunt" type="submit" value="Emprunté"> 
+            <a href="disponible.php?id=1">
+                <input class="emprunt" type="submit" value="Rendre"> 
+
             </form> 
-
-
         </div>
 
         <div class=parent>
             <img class="coverManga" SRC="assets/onepiece01.jpg" />
             <br />
             <p>Luffy, n'a qu'un rêve devenir le seigneur des pirates. </p>
-            <form action="" method="get">
+            <a href="etat.php?id=2">
                 <INPUT type="submit" value="Voir l'état du Livre"> 
             </form>
-            <form action="" method="get">
+            <a href="emprunter.php?id=2">
                  <input class="emprunt" type="submit" value="Emprunté"> 
              </form> 
 
@@ -285,6 +286,6 @@ include "header.php";
         </div>
 
     </div>
-</body>
-
-</html>
+<?php
+include 'footer.php'
+?>
