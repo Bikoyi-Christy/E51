@@ -1,12 +1,69 @@
-body{
 
-background-color: #6A869A;
-font-family: 'Kameron', serif;
+ul li{
+list-style-type:none;
+margin: 10px;
 }
+li A {
+         text-decoration: none;
+        color: black;
+    }
 
-h1, h2{
+.menu{
+    border-top: solid #309aac; 
+    border-bottom: solid #309aac; 
+    display: flex;              
+    justify-content: space-around;           
+}
+.entete{
+    margin-bottom: 2%;
+}
+.buttondiv{
     text-align: center;
 }
+h1{
+    color: #309aac;
+    padding-bottom: 5%;
+}
+h2{
+    padding-top: 2%;
+}
+p{
+    text-align: center;
+    font-family: 'Lora', serif; 
+
+}
+.buttoninscription{
+    margin-top: 1%;
+    text-align: center;
+}
+.descriptiondiv{
+    background-color: black;
+    font-size: 18px;
+}
+.description{
+    color: white;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+/* .entete{
+    background-color: black;
+} */
+body{
+
+    background-color: black;
+    font-family: 'Kameron', serif;
+    }
+    
+h1, h2{
+        text-align: center;
+    }
+
+
+.imglogo{
+    width: 5%;
+    height: 10px;
+}
+
 
 
 .classique {
