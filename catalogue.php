@@ -1,5 +1,6 @@
 <?php
 include "header.php";
+include "getState.php";
 ?>
     <h1>Le catalogue</h1>
     </br>
@@ -16,7 +17,7 @@ include "header.php";
             </form>
              <!-- connexion avec le fichier PHP afin de d'executer une requette sql et d'envoyer les donées vers le serveur -->
              <a href="emprunter.php?id=1">
-                <input class="emprunt" type="submit" value="Emprunté"> 
+                <input class="emprunt" type="submit" value="Emprunté"  <?php if(getState("Naruto")==="R&eacuteserv&eacute" ||getState("Naruto")=== "emprunt&eacute") echo "disabled"; ?>> 
             <a href="disponible.php?id=1">
                 <input class="emprunt" type="submit" value="Rendre"> 
 
@@ -31,21 +32,21 @@ include "header.php";
                 <INPUT type="submit" value="Voir l'état du Livre"> 
             </form>
             <a href="emprunter.php?id=2">
-                 <input class="emprunt" type="submit" value="Emprunté"> 
+                 <input class="emprunt" type="submit" value="Emprunté"  <?php if(getState("One piece")==="R&eacuteserv&eacute" ||getState("One piece")=== "emprunt&eacute") echo "disabled"; ?>> 
              </form> 
 
         </div>
 
-        <div class=parent>
+        <div class="parent">
 
             <img class="coverManga" SRC="assets/dbz01.jpg" />
             <br />
             <p>Une nouvelle menace plane sur la Planete terre.</p>
-            <form action="" method="get">
+            <a href="etat.php?id=3">
                 <INPUT type="submit" value="Voir l'état du Livre"> 
             </form>
-            <form action="" method="get">
-                 <input class="emprunt" type="submit" value="Emprunté"> 
+            <a href="emprunter.php?id=3">
+                 <input class="emprunt" type="submit" value="Emprunté" <?php if(getState("dbz")==="R&eacuteserv&eacute" ||getState("dbz")=== "emprunt&eacute") echo "disabled"; ?> > 
              </form> 
 
         </div>

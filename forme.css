@@ -1,3 +1,6 @@
+body{
+    margin: 0%;
+}
 
 ul li{
 list-style-type:none;
@@ -7,10 +10,27 @@ li A {
          text-decoration: none;
         color: black;
     }
-
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding-bottom: 2%;
+}
+.footer A{
+    color: white;
+}
+.divfooter p{
+    margin-bottom: 0%;
+    padding-bottom: 3%;
+}
+.divfooter{
+    background-color: black;
+    color: white;
+}
 .menu{
-    border-top: solid #309aac; 
-    border-bottom: solid #309aac; 
+    border-top: solid #64B5F6 ; 
+    border-bottom: solid #64B5F6 ; 
     display: flex;              
     justify-content: space-around;           
 }
@@ -21,10 +41,11 @@ li A {
     text-align: center;
 }
 h1{
-    color: #309aac;
+    color: #64B5F6; 
     padding-bottom: 5%;
 }
 h2{
+    color: #64B5F6; 
     padding-top: 2%;
 }
 p{
@@ -32,9 +53,35 @@ p{
     font-family: 'Lora', serif; 
 
 }
+
+.connectionform{
+    display: flex;
+}
+.inscriptionform{
+    text-align: center;
+    margin: 5% 0;
+}
+.inputinscription{
+    margin-bottom: 1%;
+}
+label
+{
+	display: block;
+	width: 150px;
+	text-align: center;
+}
+.forminput{
+    margin: 15% 8%;
+
+}
+
+.lienenrengistrement{
+    margin-top: 12%;
+}
 .buttoninscription{
     margin-top: 1%;
     text-align: center;
+    padding-bottom: 2%;
 }
 .descriptiondiv{
     background-color: black;
@@ -109,10 +156,13 @@ border : solid 2px black
 .emprunt{
 
     width: 10vw ;
-    height: 3vh;
     color: white;
     background-color: midnightblue;
     border-radius:  15px; 
+}
+
+.emprunt[disabled]{
+    opacity: 0.7;
 }
 
 .emprunt:hover{

@@ -14,6 +14,7 @@ catch (PDOException $e) {
     die();
 }
 
+
 try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $lien = $_GET['id'];

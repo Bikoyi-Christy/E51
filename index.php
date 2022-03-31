@@ -23,21 +23,21 @@
           <img src="https://cdn.verasia.fr/19334-big_default_2x/boruto-vol-14-naruto-next-generations.jpg" class="d-block" style="height:500px; width:400px; text-align:center;" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Boruto </h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <p>Le fils de Naruto rêve de surpasser son père.</p>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <img src="https://www.manga-news.com/public/images/series/attaque-des-titans-birth-of-livai-1-pika.jpg" class="d-block" style="height:500px; width:400px;" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Attaque des titants</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <p>Suivez les aventures exclusives du caporail Livai face aux titans.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://bleachmx.fr/wp-content/uploads/Seven-Deadly-Sins-tome-40.jpg" class="d-block" style="height:500px; width:400px;" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Seven Deadly Sins</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <p>Les septs péchés capitaux sont pret à se déchainer.</p>
           </div>
         </div>
       </div>
@@ -52,15 +52,9 @@
     </div>
     </div>
     <div class="buttoninscription">
-      <button type="button" class="btn btn-outline-primary">Accéder au Catalogue</button>
+      <button type="button" class="btn btn-outline-primary"><a href="senrengistrer.php">S'inscrire </a></button>
     </div>
-  <!-- Footer  -->
-  <ul>
-      <li>Home</li>
-      <li>Catalogue</li>
-      <li>S'inscrire</li>
-      <li>Se connecter</li>
-      <li>Panier</li>
-  </ul>
-</body>
-</html>
+
+    <?php
+       include "footer.php";
+    ?>
